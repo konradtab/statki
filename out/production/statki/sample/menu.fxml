@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMenu">
+   <children>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="nowa_gra" layoutX="255.0" layoutY="82.0" mnemonicParsing="false" onAction="#nowa_gra" prefWidth="90.0" text="Nowa Gra" AnchorPane.topAnchor="82.0" />
+      <Button fx:id="statystyki" layoutX="255.0" layoutY="122.0" mnemonicParsing="false" onAction="#statystyki" prefWidth="90.0" text="Statystyki" AnchorPane.topAnchor="122.0" />
+      <Button fx:id="wyloguj" layoutX="255.0" layoutY="162.0" mnemonicParsing="false" onAction="#wyloguj" prefWidth="90.0" text="Wyloguj" AnchorPane.topAnchor="162.0" />
+      <Button fx:id="close_button" layoutX="255.0" layoutY="202.0" mnemonicParsing="false" onAction="#close" prefWidth="90.0" text="Zakończ" AnchorPane.topAnchor="202.0" />
+   </children>
+</AnchorPane>
